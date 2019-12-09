@@ -165,7 +165,7 @@ p {
   margin-right: 220px;
 }
 
-.page-navigation__item {
+/* .page-navigation__item {
   padding: 10px 0;
 }
 
@@ -181,7 +181,7 @@ p {
   opacity: 0.6;
   text-transform: uppercase;
   text-decoration: none;
-}
+} */
 /*Home */
 #home {
   align-items: center;
@@ -409,4 +409,57 @@ address {
   .page-brand {
     padding: 0;
   }
+}
+/* Burger */
+@media screen and (min-width: 360px) {
+  .nav-container {
+    display: none;
+  }
+
+  .page-navigation__items {
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-navigation__items a {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 6.7px;
+    color: #ec008c;
+    opacity: 0.6;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+  }
+}
+
+.btn {
+  padding: 2px;
+  display: inline-block;
+  border: 2px solid #ad343e;
+  align-self: center;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 7px;
+  background: #ad343e;
+}
+.page-navigation__items {
+  list-style-type: none;
+  display: none;
+  padding: 10px 0;
+}
+
+.page-navigation__items a {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 6.7px;
+  color: #ec008c;
+  opacity: 0.6;
+  text-transform: uppercase;
+  text-decoration: none;
 }
