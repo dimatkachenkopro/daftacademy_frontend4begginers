@@ -293,12 +293,31 @@ p {
   margin: 10px;
 }
 .gallery__item img {
+  background: red;
   background-color: #ef008e;
   padding-top: 5px;
 }
 
+@keyframes salto {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.gallery__image {
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  transition: transform 0.5s 1s, background 2s 0.5s, filter 1.5s 2.5s;
+}
+
 .gallery__image:hover {
   transform: scale(1.2);
+  filter: blur(10px);
+  background: orange;
+  animation-name: salto;
 }
 
 @supports (display: grid) {
@@ -441,12 +460,26 @@ address {
   border: 2px solid #ad343e;
   align-self: center;
 }
+/*HERE NEW CODE*/
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
 
 .bar {
   width: 30px;
   height: 3px;
   margin: 7px;
   background: #ad343e;
+  transition: 0.4s;
 }
 .page-navigation__items {
   list-style-type: none;

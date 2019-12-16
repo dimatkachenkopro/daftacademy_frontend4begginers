@@ -17,10 +17,10 @@
             </h1>
             <nav class="page-navigation">
                     <div class="nav-container">
-                            <div class="btn">
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                                <div class="bar"></div>
+                            <div class="btn" id="btn_icon" onclick="myFunction(this)">
+                                <div class="bar bar1"></div>
+                                <div class="bar bar2"></div>
+                                <div class="bar bar3"></div>
                             </div>
                         </div>
            
@@ -228,5 +228,10 @@
                 </li>
             </ul>
         </footer> 
+        <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+            }
+            </script>
     </body>
 </html>
